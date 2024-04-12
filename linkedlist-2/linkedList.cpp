@@ -48,6 +48,22 @@ void linkedList::insertAtFront(int x)
   count++;
 }
 
+bool linkedList::search(int x) const
+{
+  node *current = head;
+
+  while(current != nullptr)
+  {
+    if(current->num == x){
+      return true;
+    } else {
+      current = current->next;
+    }
+  }
+
+  return false;
+}
+
 void linkedList::print() const
 {
   node *temp = head;

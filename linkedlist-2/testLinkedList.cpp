@@ -13,6 +13,7 @@ int main()
   myList.insertAtEnd(9);
 
   myList.print();
+  cout << myList.search(1) << endl;
 
   myList2.insertAtFront(2);
   myList2.insertAtEnd(3);
@@ -22,5 +23,6 @@ int main()
   myList2.insertAtFront(1);
 
   myList2.print();
+  cout << myList2.search(1) << endl;
   
 }
