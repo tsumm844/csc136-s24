@@ -6,6 +6,7 @@ int main()
 {
   linkedList myList;
 
+  //Ford dime 
   
   myList.insertAtEnd(3);
   myList.insertAtEnd(5);

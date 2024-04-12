@@ -9,6 +9,7 @@ linkedList::linkedList()
   tail = nullptr;
   count = 0;
 }
+//Hello
 
 
 void linkedList::insertAtEnd(int x)

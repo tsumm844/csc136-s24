@@ -10,6 +10,8 @@ struct node{
   node *next;
 };
 
+//Hi there
+
 class linkedList
 {
  public:
