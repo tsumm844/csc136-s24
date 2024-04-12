@@ -9,8 +9,6 @@ linkedList::linkedList()
   tail = nullptr;
   count = 0;
 }
-//Hello
-
 
 void linkedList::insertAtEnd(int x)
 {
@@ -30,6 +28,23 @@ void linkedList::insertAtEnd(int x)
       tail -> next = temp;
       tail = tail -> next;
     }
+  count++;
+}
+
+void linkedList::insertAtFront(int x)
+{
+  node *temp = new node;
+  temp -> num = x;
+  temp -> next = nullptr;
+
+  if (head == nullptr) //List is empty
+  {
+    head = temp;
+    tail = temp;
+  } else {
+    temp -> next = head;
+    head = temp;
+  }
   count++;
 }
 

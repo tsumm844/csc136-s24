@@ -10,14 +10,13 @@ struct node{
   node *next;
 };
 
-//Hi there
-
 class linkedList
 {
  public:
   linkedList();
   
   void insertAtEnd(int x);
+  void insertAtFront(int x);
   void print() const;
   
  private:
